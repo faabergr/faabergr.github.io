@@ -12,3 +12,5 @@ Apart from the pain they cause in bringing systems to a halt, I have a particula
 ```
 WriteFile(false, true, true, false, 3, true);
 ```
+
+When you declare a variable and assign an object to it in C#, you're really assigning a reference to the variable. Thus whenever you need to supply a reference type to a function, you can always provide null (barring [special tooling](https://github.com/Fody/NullGuard)). What you should avoid when designing your APIs is to attach meaning to null arguments. A null represents an absence of information, a language feature that shouldn't be explicitly included in the design of your contracts.
