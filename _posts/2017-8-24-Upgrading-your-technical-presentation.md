@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Upgrading your technical presentations"
-image: forkintheroad.jpg
+image: umbrellas.jpg
 description: You have to give a technical presentation. Don't panic, just follow this advice.
 
 ---
 
-![Image of fork in the road]({{ site.baseurl }}/images/forkintheroad.jpg)
+![Image of umbrellas at Glacial Gardens]({{ site.baseurl }}/images/umbrellas.jpg)
 
 I am not a veteran presenter on technical topics. I haven't spoken at Meetups, conventions, or Toastmasters. I have however given the occasional technical presentation at work, as well as watched quite a few online and at technology-related gatherings. This post will not raise your next technical presentation to the level of a Steve Jobs keynote, but I hope to help you clear the low bar often set by programmers finding themselves tasked with preparing some words and slides to be delivered in front of a group of people. My advice to you, novice presenter:
 
