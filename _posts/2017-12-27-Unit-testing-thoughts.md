@@ -20,4 +20,9 @@ Agreeing on a definition of terms is essential here, since people frequently hav
 
 Your unit tests should be quick to run, short, and easy to read and maintain. They're only worth keeping around if they provide a tangible benefit, but if you design your software with concerns well-separated then they'll let you make changes with a lot less fear and frustration.
 
+Further reading:
+
+* [Building a Pragmatic Unit Test Suite](https://www.pluralsight.com/courses/pragmatic-unit-testing) is a great PluralSight video course by [Vladimir Khorikov](http://enterprisecraftsmanship.com/) that also goes into hexagonal architectures, another name for the "separating logic from external concerns" that I mentioned above.
+* [A Response to “Why Most Unit Testing is Waste”](https://henrikwarne.com/2014/09/04/a-response-to-why-most-unit-testing-is-waste/), a post by Henrik Warne that helped me crystallize my thoughts.
+
 (image credit: [Andrea Kirkby](https://www.flickr.com/photos/andreakirkby/6527741995/in/photolist-aWQogM-7zE3KM-3Q3wsX-3Q3u5v-7zPhnX-32g9n2-392VZw-7zHRwb-Rx113-3Q7TNW-3Q3CeV-2VU2C-GoSLi-4FgLmZ-pmqENj-BmQWK-6NCsq-7yaQu9-39GYNa-kDr51f-aeMtfU-LyjkN-73woqC-zFUgo-FcB2ro-UFyewv-8483b-pmpMZz-A7d2Q-pa1LC-dJc2Kq-7Df9js-o376RR-6cMDSc-An38m-8EMAq1-847pY-2YJfh2-osQem-btawAR-DVgHk-6DbLdk-aDoK9-b3q9xe-aDoDA-W7zMzy-9M7q2W-7MFbsf-c8M5py-qg2aXh))
