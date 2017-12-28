@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Getting started unit testing"
-image: shux2017.jpg
+title: "Unit testing thoughts"
+image: unit-test-pyramid.jpg
 description: Why they're useful and warning signs.
 
 ---
+
+!["Pyramid" by Andrea Kirkby]({{ site.baseurl }}/images/unit-test-pyramid.jpg)
 
 Inspired by reading a couple of recent blog posts by other developers on the subject of unit testing, specifically ["Write tests. Not too many. Mostly integration." by Kent C. Dodds](https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c) and ["Why Is It So Difficult To Get Started Writing Automated Tests?" by Matthew Jones](https://exceptionnotfound.net/why-is-it-so-difficult-to-get-started-writing-automated-tests/), I wanted to share a few thoughts on unit tests: why I think they're useful, and qualities of a good test.<!--more--> I'm coming from a mostly server-side .NET perspective and still learning about best practices on the client-side with React. From what I've seen unit tests are very useful as another consumer of your code in addition to being part of the running application, and when you run into annoyances and problems unit testing then your code is trying to tell you something if you can pick up on it.
 
@@ -17,3 +19,5 @@ Agreeing on a definition of terms is essential here, since people frequently hav
 * Don't test the feature of the language or mirror the functionality of a component in the test. If the only thing your component does is serialize an object and pass it on to an external service, then calling that same serialization function and asserting on the resulting string is essentially testing that the same function called in two different places does the same thing.
 
 Your unit tests should be quick to run, short, and easy to read and maintain. They're only worth keeping around if they provide a tangible benefit, but if you design your software with concerns well-separated then they'll let you make changes with a lot less fear and frustration.
+
+(image credit: [Andrea Kirkby](https://www.flickr.com/photos/andreakirkby/6527741995/in/photolist-aWQogM-7zE3KM-3Q3wsX-3Q3u5v-7zPhnX-32g9n2-392VZw-7zHRwb-Rx113-3Q7TNW-3Q3CeV-2VU2C-GoSLi-4FgLmZ-pmqENj-BmQWK-6NCsq-7yaQu9-39GYNa-kDr51f-aeMtfU-LyjkN-73woqC-zFUgo-FcB2ro-UFyewv-8483b-pmpMZz-A7d2Q-pa1LC-dJc2Kq-7Df9js-o376RR-6cMDSc-An38m-8EMAq1-847pY-2YJfh2-osQem-btawAR-DVgHk-6DbLdk-aDoK9-b3q9xe-aDoDA-W7zMzy-9M7q2W-7MFbsf-c8M5py-qg2aXh))
