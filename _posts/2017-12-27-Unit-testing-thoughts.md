@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Getting started unit testing"
+image: shux2017.jpg
+description: Why they're useful and warning signs.
+
+---
+
+Inspired by reading a couple of recent blog posts by other developers on the subject of unit testing, specifically Kent Dodds and Matthew ExceptionNotFound, I wanted to share a few thoughts on unit tests: why I think they're useful, and qualities of a good test. Unit tests are another consumer of your code, and when you run into annoyances and problems unit testing then your code is trying to tell you something if you can listen.
+
+Agreeing on a definition of terms is essential here. For unit tests, I'm talking about testing one component in isolation from all other components. Unit tests should not be the only kind of tests in your suite, but they should be the majority. Integration tests should find problems that can't be found by unit tests, because unit tests are faster to run and should be identifying what's broken a whole lot faster.
+
+* Unit tests are useful when your components don't have a lot of dependencies. Are you drowning in mocks? Other modules may be hidden behind IPointlessInterfaces, but the dependency is still there, albeit behind a layer of indirection. Try to tease apart the pure business logic from the code with side effects so you can unit test the former and integration or end-to-end test the latter.
+* You'll get the most out of unit testing things that have some degree of logical complexity, code that is tied to correctly implementing business rules and domain logic. Focus on the parts where mistakes may not be immediately obvious. If you try to make a query against a database and you forget to open the connection, the unpleasant error message makes the problem abundantly clear, whereas if you accidentally swap a less-than with a greater-than inside the logic that calculates the shopping cart total taking a pricing promotion into account, you're not going to notice the discrepency unless you 1) have good automated test coverage or 2) do a fair bit of manual testing. #1 finds problems faster and lets you manually test more edge cases.
+* Test the core requirements of your system. You or another developer will come back to the application a year later and try to remember if it's a key feature of the application that names are cut off to the first 30 characters or if that's a bug. This gives you greater confidence to change things up since you have that safety net ensuring that the important stuff is still present. If requirements change then you can update the tests, but it's much better to make it a deliberate action instead of an accident.
+* If you have to update a ton of unit tests when you do some refactoring, then your tests know too much about how the components are implemented. This is often the case when you have to do a lot of mocking: 1) do some refactoring, 2) update the mocks in the broken tests, 3) repeat. Tests should consider running code a black box that accepts inputs and returns outputs.
+* Don't test the feature of the language or mirror the functionality of a component in the test. If the only thing your component does is serialize an object and pass it on to an external service, then calling that same serialization function and asserting on the resulting string is essentially testing that the same function called in two different places does the same thing.
+
+Your unit tests should be quick to run, short, and easy to read and maintain. If you don't feel like they provide any benefits then remove them, but if you design your software with concerns well-separated then they'll let you make changes with a lot less fear and frustration.
