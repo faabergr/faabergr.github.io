@@ -10,7 +10,7 @@ description: "Some reasons to host your dev blog on Netlify instead of Github Pa
 
 All software developers should really be blogging, whether you're just getting started or have been in the industry for awhile. It's a great way to get better at communicating, go deeper on topics than you would otherwise, engage with the larger development community, and get feedback and alternate perspectives that help you accelerate your learning.
 
-The current iteration of my blog has been going since 2014. I recently started having it hosted on a free service called [Netlify](https://www.netlify.com/), which has so far been a fantastic experience for reasons I'll go into below. I am not affiliated in any way with Netlify, nor am I accruing large stacks of referral cash from anyone who signs up, but nonetheless I want to get the word out.<!--more-->
+The current iteration of my blog has been going since 2014. I recently started having it hosted on a free service called [Netlify](https://www.netlify.com/), which has so far been a fantastic experience for reasons I'll go into below.<!--more--> I am not affiliated in any way with Netlify, nor am I accruing large stacks of referral cash from anyone who signs up, but nonetheless I want to get the word out.
 
 For awhile now I've been using [Github Pages](https://pages.github.com/) as my blogging platform of choice. There's always the temptation to try to write your own blogging platform, but Pages was very attractive in its relative simplicity. It uses [Jekyll](https://jekyllrb.com/) under the covers, which is a Ruby application that does the templating and has some nice plugins. The reasons why I like it still hold true:
 
