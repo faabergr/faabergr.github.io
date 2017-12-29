@@ -6,9 +6,7 @@ description: "Some reasons to consider Netlify over Github pages for your blog."
 
 ---
 
-<p align="center">
 ![Netlify logo]({{ site.baseurl }}/images/netlify.png)
-</p>
 
 The current iteration of my blog has been going since 2014. I recently started having it hosted on a free service called [Netlify](https://www.netlify.com/), which has so far been a great experience that I'll go into below. I am not affiliated in any way with Netlify and am not accruing large stacks of referral cash from anyone who signs up, but nonetheless I want to get the word out.
 
