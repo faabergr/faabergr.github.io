@@ -8,7 +8,7 @@ description: "Some reasons to consider Netlify over Github pages for your blog."
 
 ![Netlify logo]({{ site.baseurl }}/images/netlify.png)
 
-The current iteration of my blog has been going since 2014. I recently started having it hosted on a free service called [Netlify](https://www.netlify.com/), which has so far been a great experience that I'll go into below. I am not affiliated in any way with Netlify and am not accruing large stacks of referral cash from anyone who signs up, but nonetheless I want to get the word out.
+The current iteration of my blog has been going since 2014. I recently started having it hosted on a free service called [Netlify](https://www.netlify.com/), which has so far been a great experience that I'll go into below. I am not affiliated in any way with Netlify and am not accruing large stacks of referral cash from anyone who signs up, but nonetheless I want to get the word out.<!--more-->
 
 For awhile now I've been using [Github Pages](https://pages.github.com/) as my blogging platorm of choice. It uses [Jekyll](https://jekyllrb.com/) under the covers, which is a Ruby application that does the templating and has some nice plugins. The reasons still hold true:
 

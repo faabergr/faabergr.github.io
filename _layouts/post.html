@@ -22,6 +22,8 @@ layout: default
   <h2>Other posts you might enjoy</h2>
 
   {% for post in site.posts limit:5 %}
-    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+    {% if post.id != page.id %}
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>    
+    {% endif %}
   {% endfor %}
 </article>
