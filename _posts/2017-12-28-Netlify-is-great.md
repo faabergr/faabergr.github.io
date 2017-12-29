@@ -6,7 +6,7 @@ description: "Some reasons to consider Netlify over Github pages for your blog."
 
 ---
 
-![Netlify logo]({{ site.baseurl }}/images/netlify.png)
+![Netlify logo]({{ site.baseurl }}/images/netlify.png){: .center-image }
 
 The current iteration of my blog has been going since 2014. I recently started having it hosted on a free service called [Netlify](https://www.netlify.com/), which has so far been a great experience that I'll go into below. I am not affiliated in any way with Netlify and am not accruing large stacks of referral cash from anyone who signs up, but nonetheless I want to get the word out.<!--more-->
 
@@ -24,6 +24,6 @@ Github pages have been fine, but then I heard about Netlify, which is free for p
 * Easy HTTPS. I just had to click a button and I had a Let's Encrypt cert working. Almost *too* easy.
 * Drop a snippet into a textbox to have it inserted into every page. Very nice to be able to add Google Analytics and be able to tweak it without adding it to my template.
 
-Most of the work was figuring out what needed to go in my Gemfile and ruby-version file, thankfully easy to diagnose thanks to jekyll's informative error messages.
+Most of the work was figuring out what needed to go in my Gemfile and ruby-version file, thankfully easy to diagnose thanks to Jekyll's informative error messages.
 
 Overall I've found Netlify to be fantastic. It's free unless you want more fancy features, supports custom domains, and has cool stuff in the works. Best of all, it's super easy to switch back to Github pages if you so choose, better than can be said for a lot of services that offer free tiers. I highly recommend giving it a try.
